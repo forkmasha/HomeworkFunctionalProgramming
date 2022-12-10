@@ -23,7 +23,7 @@ public class Runner {
         System.out.println("Машини марки Тесла та Ауді " + onlyTeslaAndAudi);
 
         List<Car> carYanger2018 = carList.stream()
-                .filter(car -> car.getYear() < 2018).toList();
+                .filter(car -> car.getYear() > 2018).toList();
         System.out.println("Машини молодші 2018 року " + carYanger2018);
 
         List<Car> carsMilesLessThen40000 = carList.stream()
